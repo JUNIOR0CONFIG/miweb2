@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CubicVerse Network - Servidor Minecraft</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="images/server-icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Minecraft&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Fondo animado -->
+    <div class="particles" id="particles-js"></div>
+    
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="images/logo.png" alt="CubicVerse Logo">
+                <span class="logo-text">CubicVerse</span>
+            </div>
+            <div class="nav-links">
+                <a href="#home" class="nav-link active"><i class="fas fa-home"></i> Inicio</a>
+                <a href="#about" class="nav-link"><i class="fas fa-info-circle"></i> Información</a>
+                <a href="#staff" class="nav-link"><i class="fas fa-users"></i> Staff</a>
+                <a href="#rules" class="nav-link"><i class="fas fa-book"></i> Reglas</a>
+                <a href="#store" class="nav-link"><i class="fas fa-shopping-cart"></i> Tienda</a>
+            </div>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="server-icon">
+                <img src="images/server-icon.png" alt="Server Icon">
+            </div>
+            <h1 class="title">CUBICVERSE NETWORK</h1>
+            <p class="subtitle">✨ La mejor experiencia SkyBlock 1.13 - 1.21 ✨</p>
+            
+            <div class="stats">
+                <div class="stat">
+                    <i class="fas fa-globe"></i>
+                    <span class="stat-number">1.13 - 1.21</span>
+                    <span class="stat-label">Versiones</span>
+                </div>
+                <div class="stat">
+                    <i class="fas fa-bolt"></i>
+                    <span class="stat-number">24/7</span>
+                    <span class="stat-label">Uptime</span>
+                </div>
+            </div>
+
+            <!-- IP Copy Section -->
+            <div class="ip-container">
+                <h2><i class="fas fa-server"></i> CONECTATE AHORA</h2>
+                <div class="ip-box">
+                    <input type="text" readonly value="play.cubicverse.linkpc.net:26991" id="server-ip">
+                    <button class="copy-btn" onclick="copyIP()">
+                        <i class="far fa-copy"></i> Copiar IP
+                    </button>
+                </div>
+                <p class="ip-hint">Haz clic en "Copiar IP" y pégalo en tu Minecraft</p>
+            </div>
+
+            <!-- Discord & Store Buttons -->
+            <div class="action-buttons">
+                <a href="https://discord.com/invite/BYpjkkq3cr" class="btn discord-btn" target="_blank">
+                    <i class="fab fa-discord"></i> Unirse al Discord
+                </a>
+                <a href="#store" class="btn store-btn">
+                    <i class="fas fa-gem"></i> Ver Tienda
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <h2 class="section-title"><i class="fas fa-star"></i> SOBRE NOSOTROS</h2>
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>SkyBlock</h3>
+                    <p>Experiencia SkyBlock mejorada con sistemas exclusivos, misiones y eventos.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Anti-Cheat</h3>
+                    <p>Protección avanzada contra hackers y tramposos para un juego justo.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>Staff Activo</h3>
+                    <p>Equipo de moderadores disponibles 24/7 para ayudarte.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <h3>Actualizaciones</h3>
+                    <p>Contenido nuevo cada mes para mantener la diversión.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Server Info -->
+    <section class="section server-info">
+        <div class="container">
+            <h2 class="section-title"><i class="fas fa-info-circle"></i> INFORMACIÓN DEL SERVIDOR</h2>
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3><i class="fas fa-network-wired"></i> IP Principal</h3>
+                    <p class="info-text">play.cubicverse.linkpc.net:26991</p>
+                </div>
+                <div class="info-card">
+                    <h3><i class="fas fa-gamepad"></i> Gamemode</h3>
+                    <p class="info-text">SkyBlock + Minijuegos</p>
+                </div>
+                <div class="info-card">
+                    <h3><i class="fas fa-code-branch"></i> Versiones</h3>
+                    <p class="info-text">1.13.X hasta 1.21.X</p>
+                </div>
+                <div class="info-card">
+                    <h3><i class="fas fa-heart"></i> Soporte</h3>
+                    <p class="info-text">Soporte 24/7 en Discord</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Store Coming Soon -->
+    <section class="section" id="store">
+        <div class="container">
+            <h2 class="section-title"><i class="fas fa-store"></i> TIENDA</h2>
+            <div class="coming-soon">
+                <div class="soon-icon">
+                    <i class="fas fa-gem"></i>
+                </div>
+                <h3>¡Tienda en Construcción!</h3>
+                <p>Estamos preparando los mejores rangos y beneficios para ti.</p>
+                <p class="soon-text">Próximamente disponible</p>
+                <div class="countdown">
+                    <div class="countdown-item">
+                        <span id="days">00</span>
+                        <small>Días</small>
+                    </div>
+                    <div class="countdown-item">
+                        <span id="hours">00</span>
+                        <small>Horas</small>
+                    </div>
+                    <div class="countdown-item">
+                        <span id="minutes">00</span>
+                        <small>Minutos</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="Logo">
+                    <h3>CubicVerse Network</h3>
+                    <p>© 2025</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Enlaces Rápidos</h4>
+                    <a href="#home">Inicio</a>
+                    <a href="https://discord.com/invite/BYpjkkq3cr" target="_blank">Discord</a>
+                    <a href="#rules">Reglas</a>
+                    <a href="#store">Tienda</a>
+                </div>
+                <div class="footer-social">
+                    <h4>Síguenos</h4>
+                    <div class="social-icons">
+                        <a href="https://discord.com/invite/BYpjkkq3cr" class="social-icon discord">
+                            <i class="fab fa-discord"></i>
+                        </a>
+                        <a href="#" class="social-icon youtube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#" class="social-icon tiktok">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="#" class="social-icon twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Esta página no está afiliada con Mojang o Microsoft</p>
+                <p>Minecraft es una marca registrada de Mojang Studios</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <i class="fas fa-check-circle"></i>
+        <span>IP copiada al portapapeles!</span>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
